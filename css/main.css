@@ -37,5 +37,7 @@ main section#card {
 
 main section#card ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */

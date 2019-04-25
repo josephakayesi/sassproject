@@ -1,0 +1,19 @@
+{
+  "name": "sassproject",
+  "version": "1.0.0",
+  "description": "A sample SASS project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosephAkayesi/sassproject.git"
+  },
+  "author": "Joseph Akayesi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JosephAkayesi/sassproject/issues"
+  },
+  "homepage": "https://github.com/JosephAkayesi/sassproject#readme"
+}
