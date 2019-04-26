@@ -4,6 +4,7 @@
   "description": "A sample SASS project.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "jest",
     "server": "nodemon"
   },

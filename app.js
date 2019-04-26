@@ -1,10 +1,14 @@
 const express = require('express')
 const app = express()
 const exphbs = require('express-handlebars')
+const path = require('path');
 const port = process.env.PORT || 5000
 
 // Static folder
-app.use(express.static('public'))
+// app.use(express.static('public'))
+app.use(express.static(path.join(__dirname, 'public')));
+
+
 // Handlebars middleware
 app.engine('handlebars', exphbs({
     defaultLayout: 'main'
