@@ -1,9 +1,19 @@
-const app = require('express')()
+const express = require('express')
+const app = express()
+const exphbs = require('express-handlebars')
 const port = process.env.PORT || 5000
+
+// Static folder
+app.use(express.static('public'))
+// Handlebars middleware
+app.engine('handlebars', exphbs({
+    defaultLayout: 'main'
+}))
+app.set('view engine', 'handlebars')
 
 // Index route
 app.get('/', (req, res) => {
-    res.send('Index')
+    res.render('index')
 })
 
 app.listen(port, () => {
